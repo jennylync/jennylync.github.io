@@ -1,0 +1,137 @@
+body {                      /* stylesheet updated on June 22, 2025. */
+    font-family: 'Verdana';
+    line-height: 1.4;
+}
+p {
+    margin-block: 10px;
+}
+h1 {
+    color:#3b5940;       /* This color can be coded with rgb(59, 89, 64)  */
+    margin-top: 0;
+    margin-left: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    line-height: 200%;
+
+} 
+#welcome {
+    font-size: 150%;
+    text-align: center;
+}
+#about {
+    font-size: 150%;
+    text-align: center;
+}
+#reflect {
+    font-size: 150%;
+    text-align: center;
+}
+div.a p:first-of-type::first-letter { 
+    font-family: cursive; 
+    font-size: 160%; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  /* Added this style based on researching and W3C lessons */
+} 
+
+main {
+    font-family: 'Verdana';
+    margin-top: 1px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+
+
+}
+
+#reflection {
+    width: 80%;
+    height: 100%;
+    background-color: #dedede;
+    padding: 10px 0 10px 0;
+    margin-left: 200px;
+    
+}
+div.a {
+    text-indent: 50px;
+    margin-left: 30px;
+    margin-right: 25px;
+    line-height: 1.5;
+  
+}
+div.b {
+    text-indent: 50px;
+    margin-left: 30px;
+    margin-right: 25px;
+    line-height: 1.5;
+ 
+}
+div.c {
+    text-indent: 50px;
+    margin-left: 30px;
+    margin-right: 25px;
+    line-height: 1.5;
+}
+div.d {
+    text-indent: 50px;
+    margin-left: 30px;
+    margin-right: 25px;
+    line-height: 1.5;
+   
+}
+#LB {
+    text-indent: 50px;
+    margin-block: 10px;
+    margin-top: 5px;
+}
+#NB {
+    text-indent: 50px;
+    margin-block: 10px;
+
+}
+#LA {
+    text-indent: 50px;
+    margin-block: 10px;
+}
+div.me {
+    text-indent: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+div.q {
+    text-align: center;
+    margin-top: 30px;
+    font-family: cursive;
+    font-size: 18px;
+}
+footer {                /* Still need to fix footer settings since it covers some of my content in the Reflection page */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3b5940;
+    color: #ffffff;
+    height: 50px;
+}
+
+#mls {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+div.pp {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    
+}
+#bg {
+    margin-left: 100px;
+
+}
+#educ {
+    margin-left: 100px;
+}
+#eList {
+    margin-left: 100px;
+}
