@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    font-family: 'Verdana';
+    line-height: 1.5;
+}
+/* About Me page styling */
+.grid {             /* About Page style- for the grid container */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 0.2fr 0.1fr 0.1fr;
+    gap: 5px;
+    padding: 50px 5%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: lightgrey;
+    max-width: 1200px;
+    margin-bottom: 50px;
+
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: cursive;
+}
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3b5940;
+    background-color: whitesmoke; 
+    padding: 12px;
+
+}
+.me {
+    grid-column: 2;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.3rem;
+
+}
+.education {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-left: 35px;
+}
+.q {
+    grid-row: 3;
+    grid-column: 1 / 4;;
+    margin-top: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+#resume {
+    grid-column: 1 / 4;
+    border: 2px solid #3b5940;
+    background-color: #caeec2;
+    width: 150px;        
+    padding: 10px 20px;    
+    text-align: center;
+    margin: 20px auto;
+}
+.aboutfooter {          /* about page footer */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3b5940;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* styling for index page /Home page */
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#welcome {
+    color:#3b5940;       /* This color can be coded with rgb(59, 89, 64)  */
+    margin-top: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+#mls {
+    margin-top: 20px;
+    text-align: center;
+}
+div.pp {
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.homefooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3b5940;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Reflection Page styling */
+.reflectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+div.a p:first-of-type::first-letter { 
+    font-family: cursive; 
+    font-size: 160%; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  /* Added this style based on researching and W3C lessons */
+} 
+#reflection {
+    background-color: #dedede;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+#reflection p {
+    line-height: 1.8;
+}
+#LB, #NB, #LA {
+    margin-top: 10px;
+}
+.b, .c, .d {
+    text-indent: 50px;
+    margin-top: 10px;
+}
+
+.ref-footer {          /* reflection footer */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3b5940;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* media query */
+@media screen and (max-width: 850px) {
+    .grid {         /* This is for the About Page */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .image {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        max-width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    #resume {
+        order: 5;
+        width: fit-content;
+        align-self: center;
+    }
+    .homefooter {
+        position: absolute;
+        font-size: 1.2rem;
+    }
+    .flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .reflectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}    
+    
+}
+@media screen and (max-width: 750px) {
+    .grid {         /* About Page styling (phone) */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .me, .education, .q, #resume {
+        width: 90%;
+        margin: 0;
+        padding: 15px;
+    }
+    .image {
+        order: 1;
+    }
+    .me {
+        order: 2;
+    }
+    .education {
+        order: 3;
+    }
+    .q {
+        order: 4;
+    }
+    #resume {
+        order: 5;
+        width: fit-content;
+        align-self: center;
+    }
+    footer {
+        position: relative;
+        font-size: 1.2rem;
+    }
+    .flexbox {  /* styling for index page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+    #mls {
+        font-size: 1.3rem;
+    }
+    .pp {
+    max-width: 700px;
+    width: 90%;
+    margin: 50px auto 60px;
+    font-size: 1.3rem;
+    }
+    .homefooter {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3b5940;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .reflectBox {       /* Reflection Page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%
+}    
+#reflection {
+    background-color: rgb(205, 205, 180);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    font-size: larger;
+}
+#reflection p {
+    line-height: 1.8;
+}
+#LB, #NB, #LA {
+    margin-top: 10px;
+}
+.b, .c, .d {
+    text-indent: 50px;
+    margin-top: 10px;
+}
+.ref-footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3b5940;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+/* Media query on index/home page */
+@media screen and (max-width: 500px) {  /* looks the same as the media query for max-width 750px (?)*/
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #welcome {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0;
+        line-height: 1.3;
+    }
+    #mls {
+        background-color: lightgray;
+    }
+    .pp {
+        padding: 10px;
+        line-height: 1.6;
+    }
+        
+    .homefooter {
+        position: relative;
+        font-size: 1rem;
+    }
+}
+
