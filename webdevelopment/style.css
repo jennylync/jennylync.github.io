@@ -713,7 +713,7 @@ form {
 }
 .aboutfooter,                   /* For accessibility */
 .homefooter,
-.ref-foote {
+.ref-footer {
   position: relative;
   background-image: url("images/bgfooterfinal.png");
   background-size: cover;
