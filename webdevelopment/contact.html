@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<!--
+
+*****************************************************************************
+
+Title:  Contact Form Page
+
+Use:  For Users to send or leave a message to the website owner
+
+Author: Jennylyn Capones
+
+School/Term:  University of Missouri, Summer 2025
+
+Developed:  July 13, 2025
+
+Tested:  July 13, 2025. Passed on Firefox and Chrome Browsers
+
+******************************************************************************
+
+-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+            <title>Contact Form</title>
+
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quintessential&display=swap">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+            <link rel="stylesheet" href="style.css">
+      <!-- Added css style to H1. Tested: June 14, 2025; Passed on Safari and Chrome browsers
+       -->
+                <link rel="stylesheet" href="nav.css">
+        <!-- Added nav css external style sheet per instructions.
+            Added on 6/22/2025
+            -->
+
+</head>
+
+<body>
+<nav>
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" id="hamburger">&#9776;</label>
+    <ul id="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="experience.html">EXPERIENCE</a>        <!-- Created html page on June, 22, 2025. -->
+            <ul id="mobile">
+                <li><a href="#Number1">2021-Present</a></li>
+                <li><a href="#Number2">2019-2021</a></li>
+                <li><a href="#Number3">2017-2019</a></li>  
+                <li><a href="#Number4">2014-2017</a></li>          <!-- Dropdown option created on June 22, 2025 -->
+            </ul>
+        <li><a href="reflection.html">REFLECTION</a>
+        <li><a href="contact.html">CONTACT</a>
+            </li>
+   
+   <!-- Added navigation bar, Unordered List Format.
+    Updated: June 22, 2025
+    Tested: June 22, 2025; Passed on Safari and Chrome Browsers.-->
+
+
+    </ul>
+      
+</nav>
+<header>
+        <h2>Get in Touch</h2>
+    </header>
+   
+    <main>
+        <div class="contact-container">
+            <form action="mailto:jcw6b@umsystem.edu?Subject=Get%20in%20message" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="name" id="firstName" placeholder="Your First Name" autofocus required>
+                </div>
+                <div class="form-row">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="name" id="lastName" placeholder="Your Last Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+                </div>
+                <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="Enter text here" required></textarea>
+                </div>
+                <div class="form-row button-row">
+                <button type="submit">Submit</button></div>
+            </form>
+            </div>
+    </main>
+    <footer>
+        <div class="contactFooter">
+        <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin">Jennylyn Capones | <img src="images/icons8-email-32.png" class="icon" alt="email"> <em>jcw6b@umsystem.edu</em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
+        <p>&copy; 2025 IS_LT 7355. All rights reserved.</p>
+
+    <div class="credit">
+    <p>Icons by <a href="https://icons8.com/">icons8.com.</a></p>
+    </div>
+
+    </div>
+    </footer>
+</body>
+</html>
