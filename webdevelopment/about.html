@@ -30,9 +30,8 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
             <title>About Me</title>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quintessential&display=swap">
-
-            <link rel="stylesheet"
-               href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+            <link rel="stylesheet" href="style.css">
       <!-- Added css style to H1. Tested: June 14, 2025; Passed on Safari and Chrome browsers
        -->
                 <link rel="stylesheet" href="nav.css">
@@ -57,7 +56,7 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
                 <li><a href="#Number4">2014-2017</a></li>          <!-- Dropdown option created on June 22, 2025 -->
             </ul>
         <li><a href="reflection.html">REFLECTION</a>
-        <li><a href="#contact.html">CONTACT</a>
+        <li><a href="contact.html">CONTACT</a>
             </li>
    
    <!-- Added navigation bar, Unordered List Format.
@@ -97,8 +96,8 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
     </div>
 
 
-    <div id="resume">
-    <p>View my <a href="CaponesResume.pdf">Resume</a>.</p>
+    <div id="resume">                                                    <!-- Update: Resume Link added 06/21/2025. Tested: June 21, 2025; Passed on Safari and Chrome browsers. -->
+    <p>View my <a href="CaponesResume.pdf" target="_blank">Resume</a>.</p>
     </div>
 </div>
 
@@ -106,18 +105,90 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
     <p id="vidcv">Check out my Video Resume:</p>
     <iframe width="700" height="400" src="https://www.youtube.com/embed/iQMDNwqvpKc?si=zRxspUlBJ76Zxu3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div> 
- <!-- 
 
-Update: Resume Link added 06/21/2025.
-Tested: June 21, 2025; Passed on Safari and Chrome browsers.
+<figure>
+        <!-- Accessiblity tested using VoiceOver in MacBook, passed. @July 12, 2025 -->
+        <table>
+        <caption>Clinical Laboratory Experience</caption>
+        <thead>
+            <tr>
+                <th id="col-dept" scope="col">Laboratory Department</th>
+                <th id="col-level" scope="col">Experience Level</th>
+                <th id="col-notes" scope="col">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="col-dept" class="lablife">Clinical Chemistry</td>
+                <td headers="col-level" class="stars">
+                    <span class="visually-hidden">5 out of 5 stars</span>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </td>
+                <td headers="col-notes">Quality control, calibration, troubleshooting etc.</td>
+            </tr>
+            <tr>
+                <td headers="col-dept" class="lablife">Hematology</td>
+                <td headers="col-level" class="stars">
+                    <span class="visually-hidden">5 out of 5 stars</span>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </td>
+                <td headers="col-notes">CBC, blood smears & differential etc.</td>
+            </tr>
+            <tr>
+                <td headers="col-dept" class="lablife">Immunohematology (Blood Bank)</td>
+                <td headers="col-level" class="stars">
+                    <span class="visually-hidden">4 and a half out of 5 stars</span>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                </td>
+                <td headers="col-notes">Type & Screen, Crossmatching, MTP etc.</td>
+            </tr>
+            <tr>
+                <td headers="col-dept" class="lablife">Clinical Microscopy</td>
+                <td headers="col-level" class="stars">
+                    <span class="visually-hidden" aria-hidden="true">4 and a half out of 5 stars</span>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                </td>
+                <td headers="col-notes">Urinalysis & other body fluids, manual & automated methods</td>
+            </tr>
+            <tr>
+                <td headers="col-dept" class="lablife">Microbiology</td>
+                <td headers="col-level" class="stars">
+                    <span class="visually-hidden">4 out of 5 stars</span>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                </td>
+                <td headers="col-notes">Cultures, Gram stain, etc. (manual & semi-automated)</td>
+            </tr>
 
- -->
+        </tbody>
+    </table>
+</figure>
+
 
 </main>
 
 <footer>
     <div class="aboutfooter">
-     <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin">Jennylyn Capones | <img src="images/icons8-email-32.png" class="icon" alt="email"> <em>jcw6b@umsystem.edu</em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
+    <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin">Jennylyn Capones | <img src="images/icons8-email-32.png" class="icon" alt="email"> <em>jcw6b@umsystem.edu</em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
     <p>&copy; 2025 IS_LT 7355. All rights reserved.</p>
 
     <div class="credit">

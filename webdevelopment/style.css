@@ -140,7 +140,72 @@ h1 {
     font-family: 'Arial';
     color: #ffffff;
 }
-
+/* ----- TABLE STYLING, added July 12, 2025 ------- */
+figure {
+    margin: 0;
+    padding: 0;
+}
+figure {
+    border: 5px solid saddlebrown;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 10px;   
+}
+caption {
+    caption-side: top;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    color: #2F3E46;
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+table {
+    margin: 2rem auto;
+    border: 3px solid #7c8c74;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+}
+th, td {
+    border: 2px solid #7c8c74;
+    padding: 10px;
+    height: 60px;
+    vertical-align: middle;
+}
+th, .stars {
+    text-align: center;
+}
+.stars i {
+    color: #b36b00;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+thead {
+    background-color: #2F3E46;
+    color: white;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f6ee;
+}
+tbody tr:nth-child(odd) {
+    background-color: #e7e9d7;
+} 
+tbody tr:first-child,
+tbody tr:last-child {
+    background-color: #93c4b7;
+}
 /* Zoom-in icons in the footer when hovered */
 .icon {
   transform-origin: center center;
@@ -541,8 +606,145 @@ div.a p:first-of-type::first-letter {
     background-repeat: no-repeat;
 }
 
+/* STYLING FOR CONTACT PAGE FORM */
+h2 {
+    color: #1d3321;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 5px
+}
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    gap: 1rem;
+}
+.form-row label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+.form-row.button-row button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #5a6c54;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-row.button-row {
+    justify-content: center;
+    margin-top: 30px;
+}
 
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  max-width: 100%;
+}
 
+.form-row textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #1d3321;
+  outline-offset: 2px;
+}
+.contact-container button:hover {
+  background-color: #3f4e3b;
+}
+.contact-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2em auto;
+    min-height: 50vh;
+    width: 800px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 650px;
+    padding: 40px 50px 20px 20px;
+
+}
+form {
+    width: 100%;
+    max-width: 100%;
+}
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+.contactFooter {
+    position: absolute;
+    margin-top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-image: url("images/bgfooterfinal.png"); /*footer background image */ 
+    background-size: cover;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13pt;
+    font-family: 'Arial';
+    color: #ffffff;
+}
+.aboutfooter,                   /* For accessibility */
+.homefooter,
+.ref-foote {
+  position: relative;
+  background-image: url("images/bgfooterfinal.png");
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13pt;
+  font-family: 'Arial';
+}
+
+.aboutfooter::before,
+.homefooter::before,
+.ref-footer::before,
+.contactFooter::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);  /* darkens the image */
+  z-index: 0;
+}
+
+.aboutfooter *:not(.icon),
+.homefooter *:not(.icon),
+.ref-footer *:not(.icon),
+.contactFooter *:not(.icon) {
+  position: relative;
+  z-index: 1;
+}
 /* media query */
 @media screen and (max-width: 850px) {
     .grid {         /* This is for the About Page */
@@ -596,7 +798,7 @@ div.a p:first-of-type::first-letter {
         margin: 0 auto;
     }
     #mls {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         background: lightgray;
     }
     .mayovideo {
@@ -611,11 +813,12 @@ div.a p:first-of-type::first-letter {
     .pp {
         padding: 10px;
         line-height: 1.6;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-bottom: 30px;
     }
 
 }
+/* MEDIA QUERY FOR MOBILE SCREENS */
 @media screen and (max-width: 640px) {
     .body {
         min-height: 100vh;
@@ -639,22 +842,22 @@ div.a p:first-of-type::first-letter {
     }
     .me {
         order: 2;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
      .q {
         order: 3;
         font-weight: bolder;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         background-color: beige;
     }
     .education {
         order: 4;
         padding: 20px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-top: 20px;
     }
     #eList {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1.6;
     }
 
@@ -662,8 +865,8 @@ div.a p:first-of-type::first-letter {
         order: 5;
         width: fit-content;
         align-self: center;
-        font-weight: bolder;
-        font-size: 1.4rem;
+        font-weight: bold;
+        font-size: 1rem;
     }
     .aboutfooter {
         display: flex;
@@ -682,6 +885,38 @@ div.a p:first-of-type::first-letter {
         aspect-ratio: 16 / 9;
 
     }
+    /* ----- TABLE STYLING, added July 12, 2025 ------- */
+    /* RESPONSIVE TABLE */
+    figure {
+        border: none;
+        width: 90%;
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 0;  
+    }
+    th, td {
+        display: block;
+    }
+    .stars {
+        text-align: center;
+
+    }
+    thead { 
+        display: none;
+    }
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color: #427977;
+    }
+    tbody td { border-bottom-style: none;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f6ee;
+}
+    tbody tr:nth-child(odd) {
+        background-color: #e7e9d7;
+} 
     .flexbox {  /* styling for index/home page */
         display: flex;
         flex-direction: column;
@@ -712,7 +947,7 @@ div.a p:first-of-type::first-letter {
     .pp {
         padding: 10px;
         line-height: 1.6;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin-bottom: 30px;
     }
     .homefooter {
@@ -865,7 +1100,67 @@ div.a p:first-of-type::first-letter {
     margin-top: auto;
    }   
    
+/* CONTACT FORM MEDIA QUERY */
+   .contact-container {
+    flex-direction: column;
+    padding: 1em;
+    align-items: stretch;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .form-row label {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    flex: none;
+    font-size: 1rem;
+  }
+
+  .form-row.button-row {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-row.button-row button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    position: relative;
+    font-size: 12pt;
+    background-size: cover;
+    }
 }
+
+
 /* Print page media query */
 @media print {
     * {
