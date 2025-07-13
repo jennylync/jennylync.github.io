@@ -775,9 +775,10 @@ form {
         height: 80px;
     }
     .contactFooter {
-    position: absolute;
-    margin-top: auto;
+        position: relative;
+        margin-top: 50px;
 }
+
     .flexbox {
         display: flex;
         flex-direction: column;
