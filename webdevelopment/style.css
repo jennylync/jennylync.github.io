@@ -795,6 +795,9 @@ form {
     .form {
         margin-bottom: 100px;
     }
+    .contact-page {
+        flex: 1;
+    }
     .flexbox {
         display: flex;
         flex-direction: column;
