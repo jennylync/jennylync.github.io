@@ -766,7 +766,7 @@ form {
         width: fit-content;
         align-self: center;
     }
-    .homefooter, .aboutfooter, .ref-footer, .contactFooter {
+    .homefooter, .aboutfooter, .ref-footer {
         position: relative;
         font-size: 1.2rem;
         display: flex;
@@ -774,6 +774,10 @@ form {
         flex-wrap: wrap;
         height: 80px;
     }
+    .contactFooter {
+    position: absolute;
+    margin-top: auto;
+}
     .flexbox {
         display: flex;
         flex-direction: column;
