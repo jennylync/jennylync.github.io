@@ -7,11 +7,19 @@ main {
     font-family: 'Verdana';
     line-height: 1.5;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 
+}
+main {
+    flex: 1;
 }
 /* About Me page styling */
 .grid {             /* About Page style- for the grid container */
@@ -694,7 +702,7 @@ form {
     min-height: auto;
 }
 .contactFooter {
-    position: absolute;
+    position: relative;
     margin-top: auto;
     left: 0;
     bottom: 0;
@@ -776,7 +784,7 @@ form {
     }
     .contactFooter {
         position: relative;
-        margin-top: 100px;
+        margin-top: auto;
         left: 0;
         bottom: 0;
         width: 100%;
