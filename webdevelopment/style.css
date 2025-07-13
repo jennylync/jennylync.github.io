@@ -775,10 +775,28 @@ form {
         height: 80px;
     }
     .contactFooter {
-        position: relative;
-        margin-top: 50px;
+        position: absolute;
+        margin-top: auto;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-image: url("images/bgfooterfinal.png"); /*footer background image */ 
+        background-size: cover;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: 'Arial';
+        color: #ffffff;
 }
-
+    footer a[href^="tel"] {
+        color: inherit;            
+        text-decoration: none;    
+        font-weight: normal;       
+        }
     .flexbox {
         display: flex;
         flex-direction: column;
