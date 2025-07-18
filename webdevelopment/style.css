@@ -745,25 +745,11 @@ form {
     align-items: center;
     justify-content: center;
     font-size: 13pt;
+    font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
 }
-.aboutfooter,                   /* For accessibility */
-.homefooter,
-.ref-footer {
-  position: relative;
-  background-image: url("images/bgfooterfinal.png");
-  background-size: cover;
-  color: #ffffff;
-  text-align: center;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12pt;
-    font-weight: bold;
-  font-family: 'Arial';
-}
+
 .aboutfooter::before, .homefooter::before, ref-footer::before, .contactFooter::before  {
   content: '';
   position: absolute;
