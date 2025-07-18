@@ -745,42 +745,12 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14pt;
+  font-size: 12pt;
     font-weight: bold;
   font-family: 'Arial';
 }
 
-.aboutfooter::before,
-.homefooter::before,
-.ref-footer::before,
-.contactFooter::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);  /* darkens the image */
-  z-index: 0;
-}
 
-.aboutfooter *:not(.icon),
-.homefooter *:not(.icon),
-.ref-footer *:not(.icon),
-.contactFooter *:not(.icon) {
-  position: relative;
-  z-index: 1;
-}
-.aboutfooter::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5);  /* 50% opaque black overlay */
-    z-index: 0;
-}
-
-.aboutfooter > * {
-    position: relative;
-    z-index: 1;
-    color: #ffffff; /* white text stays visible */
-}
 /* media query */
 @media screen and (max-width: 850px) {
     .grid {         /* This is for the About Page */
