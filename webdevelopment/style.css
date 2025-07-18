@@ -146,6 +146,19 @@ h1 {
     font-family: 'Arial';
     color: #ffffff;
 }
+.aboutfooter::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);  /* 50% opaque black overlay */
+    z-index: 0;
+}
+
+.aboutfooter > * {
+    position: relative;
+    z-index: 1;
+    color: #ffffff; /* white text stays visible */
+}
 /* ----- TABLE STYLING, added July 12, 2025 ------- */
 figure {
     margin: 0;
