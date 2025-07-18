@@ -134,6 +134,7 @@ h1 {
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: #3b5940;
     background-image: url("images/bgfooterfinal.png"); /*footer background image */ 
     background-size: cover;
     height: 70px;
@@ -145,6 +146,18 @@ h1 {
     font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
+}
+.aboutfooter::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(59,89,64,0.8);  /* 80% opacity of base green */
+  z-index: 0;
+  pointer-events: none;
+}
+.aboutfooter > * {
+  position: relative;
+  z-index: 1;
 }
 /* ----- TABLE STYLING, added July 12, 2025 ------- */
 figure {
