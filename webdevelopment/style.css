@@ -415,6 +415,7 @@ div.a p:first-of-type::first-letter {
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: #3b5940;
     background-image: url("images/bgfooterfinal.png"); /*footer background image */ 
     background-size: cover;
     height: 70px;
@@ -427,6 +428,18 @@ div.a p:first-of-type::first-letter {
     font-family: 'Arial';
     color: #ffffff;
 
+}
+.ref-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(59,89,64,0.8);  /* 80% opacity of base green */
+  z-index: 0;
+  pointer-events: none;
+}
+.ref-footer > * {
+  position: relative;
+  z-index: 1;
 }
 /* STYLING FOR EXPERIENCE PAGE - ADDED JULY 9, 2025 */
 .prof {
@@ -722,6 +735,7 @@ form {
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: #3b5940;
     background-image: url("images/bgfooterfinal.png"); /*footer background image */ 
     background-size: cover;
     height: 70px;
@@ -749,7 +763,18 @@ form {
     font-weight: bold;
   font-family: 'Arial';
 }
-
+.aboutfooter::before, .homefooter::before, ref-footer::before, .contactFooter::before  {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(59,89,64,0.8);  /* 80% opacity of base green */
+  z-index: 0;
+  pointer-events: none;
+}
+.aboutfooter, .homefooter, .ref-footer, .contactFooter > * {
+  position: relative;
+  z-index: 1;
+}
 
 /* media query */
 @media screen and (max-width: 850px) {
