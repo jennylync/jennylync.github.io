@@ -134,6 +134,7 @@ h1 {
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: #3b5940; /* overlay background in case the images doesn't work, help with accessibility - contrast */
     background-image: url("images/bgfooterfinal.png"); /*footer background image */ 
     background-size: cover;
     height: 70px;
