@@ -142,7 +142,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
@@ -315,10 +315,22 @@ tbody tr:last-child {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weigth: bold;
     font-family: 'Arial';
     color: #ffffff;
+}
+.homefooter::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(59,89,64,0.8);  /* 80% opacity of base green */
+  z-index: 0;
+  pointer-events: none;
+}
+.homefooter > * {
+  position: relative;
+  z-index: 1;
 }
 .icon {     /* styling footer icons */
     height: 1.3em;
@@ -424,7 +436,7 @@ div.a p:first-of-type::first-letter {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
@@ -744,13 +756,12 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 13pt;
+    font-size: 12pt;
     font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
 }
-
-.aboutfooter::before, .homefooter::before, ref-footer::before, .contactFooter::before  {
+.contactFooter::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -758,7 +769,7 @@ form {
   z-index: 0;
   pointer-events: none;
 }
-.aboutfooter, .homefooter, .ref-footer, .contactFooter > * {
+.contactFooter > * {
   position: relative;
   z-index: 1;
 }
