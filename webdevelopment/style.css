@@ -141,7 +141,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 13pt;
+    font-size: 14pt;
+    font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
 }
@@ -300,7 +301,8 @@ tbody tr:last-child {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 13pt;
+    font-size: 14pt;
+    font-weigth: bold;
     font-family: 'Arial';
     color: #ffffff;
 }
@@ -407,7 +409,8 @@ div.a p:first-of-type::first-letter {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 13pt;
+    font-size: 14pt;
+    font-weight: bold;
     font-family: 'Arial';
     color: #ffffff;
 
@@ -729,7 +732,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13pt;
+  font-size: 14pt;
+    font-weight: bold;
   font-family: 'Arial';
 }
 
