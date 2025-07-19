@@ -47,13 +47,13 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
     <label for="toggle-menu" id="hamburger">&#9776;</label>
     <ul id="menu">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="about.html" class="current">ABOUT</a></li>
         <li><a href="experience.html">EXPERIENCE</a>        <!-- Created html page on June, 22, 2025. -->
             <ul id="mobile">
-                <li><a href="#Number1">2021-Present</a></li>
-                <li><a href="#Number2">2019-2021</a></li>
-                <li><a href="#Number3">2017-2019</a></li>  
-                <li><a href="#Number4">2014-2017</a></li>          <!-- Dropdown option created on June 22, 2025 -->
+                <li><a href="experience.html#Current">2021-Present</a></li>
+                <li><a href="experience.html#2019-2021">2019-2021</a></li>
+                <li><a href="experience.html#2017-2019">2017-2019</a></li>  
+                <li><a href="experience.html#2014-2017">2014-2017</a></li>          <!-- Dropdown option created on June 22, 2025 -->
             </ul>
         <li><a href="reflection.html">REFLECTION</a>
         <li><a href="contact.html">CONTACT</a>
@@ -78,31 +78,48 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
         </div>
     <div class="me">   
     <p>I was born and raised in the Philippines. Driven by passion for healthcare and lifelong learning, I moved internationally to expand my knowledge and pursue meaningful work in clinical laboratory diagnostics. I am certified as an International Medical Laboratory Scientist by the American Society of Clinical Pathologists (ASCP<sup>i</sup>), and I bring experience from diverse laboratory settings that have shaped my dedication to quality patient care.<br><br>
-    Outside of work and school, I enjoy reading books especially the fantasy genre.</p>
+    Outside of work and school, I enjoy reading books especially the fantasy genre.</p><br>
+    <p>One of my favorite quote is:</p>
 </div>
-
+    
     <div class="q">
-    <blockquote>"Nothing can dim the light which shines from within." - <em>Maya Angelou</em></blockquote>
+    <blockquote>"Nothing can dim the light which shines from within." - Maya Angelou</blockquote>
     </div>
+</div>
 
     <div class="education">
-    <p>Educational History:</p>
-    <div id="eList">
-    <ul>
-        <li>Master of Health Science in Clinical and Diagnostic Science with emphasis in Clinical Laboratory Science (MHS-CDS-CLS) | University of Missouri | 2024 - Present</li>
-        <li>Online Educator - Graduate Certificate | University of Missouri | 2024 - Present</li>
-        <li>Bachelor of Science in Medical Technology | Trinity University of Asia (Philippines) | 2009 - 2013</li>
-    </ul></div>
+    <table class="educ">
+        <caption>Educational History</caption>
+        <thead>
+            <tr>
+                <th scope="col">Degree</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Graduation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="long-text">Master of Health Science in Clinical & Diagnostic Sciences with emphasis in Clinical Laboratory Science</td>
+                <td>University of Missouri</td>
+                <td>Anticipated 2027</td>
+            </tr>
+            <tr>
+                <td>Online Educator - Graduate Certificate</td>
+                <td>University of Missouri</td>
+                <td>Anticipated 2025</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Science in Medical Technology</td>
+                <td>Trinity University of Asia (Philippines)</td>
+                <td>2013</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
-
-
-    <div id="resume">                                                    <!-- Update: Resume Link added 06/21/2025. Tested: June 21, 2025; Passed on Safari and Chrome browsers. -->
-    <p>View my <a href="CaponesResume.pdf" target="_blank">Resume</a>.</p>
-    </div>
-</div>
 
 <div class="videocv">
-    <p id="vidcv">Check out my Video Resume:</p>
+    <a href="CaponesResume.pdf" target="_blank" class="resume-btn">View Resume (PDF)</a>
+
     <iframe width="700" height="400" src="https://www.youtube.com/embed/iQMDNwqvpKc?si=zRxspUlBJ76Zxu3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div> 
 
@@ -188,8 +205,9 @@ Tested:  July 11, 2025; Passed on Firefox and Chrome browsers.
 
 <footer>
     <div class="aboutfooter">
-    <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin">Jennylyn Capones | <img src="images/icons8-email-32.png" class="icon" alt="email"> <em>jcw6b@umsystem.edu</em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
-    <p>&copy; 2025 IS_LT 7355. All rights reserved.</p>
+        <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin"><a href="https://www.linkedin.com/in/jennylyncapones/" target="_blank" rel="noopener noreferrer">Jennylyn Capones</a> | 
+        <img src="images/icons8-email-32.png" class="icon" alt="email"> <em><a href="mailto:jcw6b@umsystem.edu?Subject=Get%20in%20touch%20with%20me">jcw6b@umsystem.edu</a></em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
+        <p>&copy; 2025 IS_LT 7355. All rights reserved.</p>
 
     <div class="credit">
     <p>Icons by <a href="https://icons8.com/">icons8.com.</a></p>

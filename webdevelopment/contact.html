@@ -47,13 +47,13 @@ Tested:  July 13, 2025. Passed on Firefox and Chrome Browsers
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="experience.html">EXPERIENCE</a>        <!-- Created html page on June, 22, 2025. -->
             <ul id="mobile">
-                <li><a href="#Number1">2021-Present</a></li>
-                <li><a href="#Number2">2019-2021</a></li>
-                <li><a href="#Number3">2017-2019</a></li>  
-                <li><a href="#Number4">2014-2017</a></li>          <!-- Dropdown option created on June 22, 2025 -->
+                <li><a href="experience.html#Current">2021-Present</a></li>
+                <li><a href="experience.html#2019-2021">2019-2021</a></li>
+                <li><a href="experience.html#2017-2019">2017-2019</a></li>  
+                <li><a href="experience.html#2014-2017">2014-2017</a></li>
             </ul>
         <li><a href="reflection.html">REFLECTION</a>
-        <li><a href="contact.html">CONTACT</a>
+        <li><a href="contact.html" class="current">CONTACT</a>
             </li>
    
    <!-- Added navigation bar, Unordered List Format.
@@ -69,9 +69,12 @@ Tested:  July 13, 2025. Passed on Firefox and Chrome Browsers
     </header>
    
     <main>
+        <div class="contactMessage">
+            <p>I’d love to hear from you! Feel free to reach out with questions, collaboration ideas, or professional opportunities. Please fill-out the Contact Form below.</p>
+        </div>
         <div class="contact-page">
         <div class="contact-container">
-            <form action="mailto:jcw6b@umsystem.edu?Subject=Get%20in%20touch%20message" method="post" enctype="text/plain">
+            <form action="mailto:jcw6b@umsystem.edu?Subject=Get%20in%20touch%20with%20me" method="post" enctype="text/plain">
                 <div class="form-row">
                     <label for="firstName">First Name:</label>
                     <input type="text" name="name" id="firstName" placeholder="Your First Name" autofocus required>
@@ -95,13 +98,15 @@ Tested:  July 13, 2025. Passed on Firefox and Chrome Browsers
             </div>
     </main>
     <footer>
-        <div class="contactFooter">
-        <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin">Jennylyn Capones | <img src="images/icons8-email-32.png" class="icon" alt="email"> <em>jcw6b@umsystem.edu</em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
+        <div class="aboutfooter">
+        <p><img src="images/icons8-linkedin-32.png" class="icon" alt="linkedin"><a href="https://www.linkedin.com/in/jennylyncapones/" target="_blank" rel="noopener noreferrer">Jennylyn Capones</a> | 
+        <img src="images/icons8-email-32.png" class="icon" alt="email"> <em><a href="mailto:jcw6b@umsystem.edu?Subject=Get%20in%20touch%20with%20me">jcw6b@umsystem.edu</a></em> | <img src="images/icons8-phone-32.png" class="icon" alt="phone"> +1 888 888 888 |</p>
         <p>&copy; 2025 IS_LT 7355. All rights reserved.</p>
 
-    <div class="credit">
-    <p>Icons by <a href="https://icons8.com/">icons8.com.</a></p>
-    </div>
+
+        <div class="credit">
+        <p>Icons by <a href="https://icons8.com/">icons8.com.</a></p>
+        </div>
 
     </div>
     </footer>
