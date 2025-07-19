@@ -775,7 +775,16 @@ form {
   font-weight: bold;
   font-family: 'Arial';
 }
-
+.aboutfooter::before,
+.homefooter::before,
+.ref-footer::before,
+.contactFooter::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Strong dark overlay */
+  z-index: 0;
+}
 .aboutfooter *,
 .homefooter *,
 .ref-footer *,
