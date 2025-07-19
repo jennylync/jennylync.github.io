@@ -783,7 +783,8 @@ form {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);  /* darkens the image */
+  background-color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.6);  /* darkens the image */
   z-index: 0;
 }
 
@@ -793,6 +794,9 @@ form {
 .contactFooter *:not(.icon) {
   position: relative;
   z-index: 1;
+}
+.aboutfooter p, .aboutfooter a {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 /* media query */
 @media screen and (max-width: 850px) {
