@@ -761,9 +761,9 @@ form {
 }
 .aboutfooter,                   /* For accessibility */
 .homefooter,
-.ref-footer {
+.ref-footer, .contactFooter {
   position: relative;
-  background-image: url("images/bgfooterfinal.png");
+  background-image: url("images/bgfooterdark.png");
   background-size: cover;
   color: #ffffff;
   text-align: center;
@@ -774,17 +774,6 @@ form {
   font-size: 13pt;
   font-weight: bold;
   font-family: 'Arial';
-}
-
-.aboutfooter::before,
-.homefooter::before,
-.ref-footer::before,
-.contactFooter::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: 0;
 }
 
 .aboutfooter *,
