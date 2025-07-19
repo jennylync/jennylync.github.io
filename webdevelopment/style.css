@@ -763,6 +763,7 @@ form {
 .homefooter,
 .ref-footer, .contactFooter {
   position: relative;
+  background-color: #1d3321; /* overlay in case image doesn't load, for accessibility as well*/
   background-image: url("images/bgfooterdark.png");
   background-size: cover;
   color: #ffffff;
@@ -782,7 +783,7 @@ form {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Strong dark overlay */
+  background-color: rgba(29,51,33,0.7); 
   z-index: 0;
 }
 .aboutfooter *,
