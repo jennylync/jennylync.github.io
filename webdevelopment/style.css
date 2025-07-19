@@ -765,7 +765,7 @@ form {
   position: relative;
   background-image: url("images/bgfooterfinal.png");
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   height: 70px;
   display: flex;
@@ -774,6 +774,7 @@ form {
   font-size: 13pt;
   font-weight: bold;
   font-family: 'Arial';
+  text-shadow:rgba(0, 0, 0, 0.5)
 }
 
 .aboutfooter::before,
@@ -783,8 +784,6 @@ form {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #1a1a1a;
-  background-color: rgba(0, 0, 0, 0.6);  /* darkens the image */
   z-index: 0;
 }
 
@@ -795,9 +794,7 @@ form {
   position: relative;
   z-index: 1;
 }
-.aboutfooter p, .aboutfooter a {
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
+
 /* media query */
 @media screen and (max-width: 850px) {
     .grid {         /* This is for the About Page */
