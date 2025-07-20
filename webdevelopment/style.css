@@ -190,19 +190,16 @@ a[href^="mailto:"] {
 figure {
     margin: 0;
     padding: 0;
-}
-figure {
-    border: 5px solid saddlebrown;
     width: 90%;
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 10px auto;
     padding: 10px;   
 }
 caption {
     caption-side: top;
     font-weight: bold;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2px;
     color: #2F3E46;
 }
@@ -218,7 +215,7 @@ caption {
     border: 0 !important;
 }
 table {
-    margin: 2rem auto;
+    margin: 0 auto;
     border: 3px solid #7c8c74;
     border-collapse: collapse;
     width: 90%;
@@ -248,10 +245,7 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color: #e7e9d7;
 } 
-tbody tr:first-child,
-tbody tr:last-child {
-    background-color: #93c4b7;
-}
+
 /* Zoom-in icons in the footer when hovered */
 .icon {
   transform-origin: center center;
