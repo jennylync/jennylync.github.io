@@ -1400,6 +1400,9 @@ form {
     .p4, .p5 {
         margin-bottom: 30px;
     }
+    .p5, .p6 {
+        margin-left: 20px;
+    }
     .microscope {
         width: 60%;
         height: 50%;
@@ -1492,6 +1495,7 @@ form {
     line-height: normal;
     font-size: 11pt;
     text-align: center;
+    margin-bottom: 20px;
 
   }
   form {
@@ -1534,6 +1538,7 @@ form {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: 200;
   }
   .contactFooter {
     display: flex;
