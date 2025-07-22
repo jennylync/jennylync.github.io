@@ -81,7 +81,7 @@ h1, h2 {
     text-align: center;
     font-style: normal;
     font-size: 1.3rem;
-    border-left: 6px solid #3b5940;
+    border-left: 6px solid #b36b00;
     margin: 0 auto;
     padding: 0;
 }
@@ -317,8 +317,10 @@ tbody tr:nth-child(odd) {
 }
 .pp {
     margin-top: 50px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 50px;
+    border-left: 5px solid #b36b00;
+    padding-left: 10px;
 }
 
 .homefooter {
@@ -1186,19 +1188,23 @@ form {
         margin: 2rem auto;
         padding: 0;  
     }
-    th, td {
+    figure th, td {
         display: block;
-        font-size: smaller;
+        font-size: 8pt;
         border: 2px solid #7c8c74;
-        padding: 10px;
-        height: 50px;
-
+        padding: 0;
+        height: 30px;
+    }
+    .lablife {
+        font-size: smaller;
     }
     caption {
         font-size: smaller;
     }
     .stars {
+        display: block;
         text-align: center;
+        height: auto;
 
     }
     thead { 
@@ -1206,7 +1212,8 @@ form {
     }
     tr td:first-child {
         font-weight: bold;
-        font-size: 90%;
+        font-size: 10pt;
+        padding: 0;
         background-color: #427977;
     }
     tbody td { border-bottom-style: none;
@@ -1217,44 +1224,45 @@ form {
     tbody tr:nth-child(odd) {
         background-color: #e7e9d7;
     } 
+
     .educ {
-        width: 70%;
+        width: 80%;
         max-width: 400px;
         margin: 1rem auto;
         margin-bottom: 50px;
         border: none;
     }
     .educ caption {
-        font-size: 1rem;
+        font-size: smaller;
         text-align: center;
         display: block;
     }
     .educ, .educ thead, .educ tbody,
     .educ th, .educ td, .educ tr {
         display: block;
-        width: 100%;
+
     }
     .educ thead {
-        display: none
+        display: none;
     }
     .educ td {
         border: 1px solid #2F3E46;
-        padding: 1em;
-        font-size: smaller;
+        padding: 0;
         display: block;
         white-space: normal;
         word-wrap: break-word;
-        word-break: break-word;
+        overflow-wrap: break-word;
         width: 100%;
-        font-size: 11pt;
+        font-size: 9pt;
     }
 
     .educ td:first-child {
         font-weight: bold;
-        font-size: 90%;
+        font-size: 8.5pt;
+        vertical-align: middle;
         background-color: #427977;
         color: #fff;
-        padding: 0.8em;
+        padding: 1.5px;
         white-space: normal;
         word-break: break-word;
         width: 100%;
